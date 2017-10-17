@@ -50,3 +50,9 @@ Step 3: Merge new branch in master branch
 Step 4: Delete Branch 
 		git branch -d "branch name"  -- delete from local
 		git push origin --delete "branch name" -- delete from remote
+
+============================================================================
+How to send email from GitHub
+============================================================================
+
+Step 1: Go to our GitHub -> Repository -> Settings -> Integration & Services -> Add Email-Service
