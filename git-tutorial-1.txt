@@ -56,3 +56,70 @@ How to send email from GitHub
 ============================================================================
 
 Step 1: Go to our GitHub -> Repository -> Settings -> Integration & Services -> Add Email-Service
+
+============================================================================
+Git Tags - what, why, when and how
+============================================================================
+
+Today we will learn:
+
+1. What are tags / releases
+2. Why should I create Tags
+3. When to create TAGS
+4. How to create TAGS in git
+   create | show | publish | delete
+
+What are Git Tags
+Tagging in Git or any other VCS refers to creating specific points in history for your repository/data
+
+This is usually done to mark release points.
+(v1.0, v1.1, ...)
+
+Why should I create TAGS
+
+1. To mark release points for your code/data
+2. To create historic restore points
+
+When to create TAGS
+1. When you want to create a release point for a stable version of your code.
+2. WHen you want to create a historic point for your code/data that you can refer at any future time (to restore your data)
+
+STEP-1
+1. Checkout the branch where you want to create the tag
+git checkout <branch name>
+
+2. Create tag with some name
+git tag <tag name>
+example: git tag v1.0
+git tag
+
+git tag -a v1.0 -m "tag for release ver 1.1" 
+
+git tag -l "v1.*"
+
+STEP -3
+git tag
+git show v1.0
+git tag -l "v1.*"
+
+STEP -4 
+Push tags to remote
+$git push origin v1.0
+
+Pushing all tags to remote
+$git push origin --tags
+$git push --tags
+
+STEP -5
+Delete Tags (if required only)
+$git tag -d v1.0
+$git tag --delete v1.0
+
+Delete Tags from remote (if required only)
+$git push origin -d v1.0
+$git push origin --delete v1.0
+$git push origin :v1.0
+
+Delete Tags at once:
+git tag -d v1.0 v1.1 (local)
+git push origin -d v1.0 v1.1 (remote)
