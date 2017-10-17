@@ -1,0 +1,52 @@
+Git and Github Beginner tutorial - Getting started - Install Git (Windows)
+
+Step 1 : check if git is already installed
+
+Step 2 : download and install git
+
+Step 3 : add your project to git
+
+Step 4 : commands
+
+	git config --global user.email "markdderosas@gmail.com"
+	git config --global user.name "d3nl3r"
+	
+	-git init
+	-git status
+	-git add . | git add myfile.txt
+	-git commit -m "my message"
+	-git remote add origin https://github.com/...
+	-git push -u origin master
+	-git log
+	-git --help
+	
+Step 5 : adding to remote repository
+
+==========================================================================
+BRANCHING and MERGING
+==========================================================================
+
+1. What are branches
+2. How to create branches
+3. How to checkout branches
+4. How to merge branch to master 
+5. How to delete branch (local and remote)
+
+
+Step 1: Create branch
+		git branch "branch name"
+
+Step 2: Checkout branch
+		git checkout "branch name"
+
+Step 3: Merge new branch in master branch
+		git merge "branch name"
+	
+		Create new branch and then switch to it
+		git checkout -b bugFix
+		
+		See how many branches we have
+
+Step 4: Delete Branch 
+		git branch -d "branch name"  -- delete from local
+		git push origin --delete "branch name" -- delete from remote
