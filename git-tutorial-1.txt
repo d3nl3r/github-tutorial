@@ -123,3 +123,16 @@ $git push origin :v1.0
 Delete Tags at once:
 git tag -d v1.0 v1.1 (local)
 git push origin -d v1.0 v1.1 (remote)
+
+How to checkout TAGS (when required)
+We cannot checkout tags in git
+
+We can create a branch from a tag and checkout the branch
+
+git checkout -b <branch name> <tag name>
+example: git checkout -b releasevers1 v1.0
+
+Can I create a tag from some past commit? YES
+
+git tag <tag name> <reference of commit>
+example: git tag v1.2 5fcdb03
