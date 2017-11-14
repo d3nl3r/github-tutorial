@@ -3,3 +3,11 @@ This is how you undo the changes you saved from html files
 $git status
 
 $git checkout index.html
+
+--------
+
+$git status
+
+$git add index.html
+
+$git reset HEAD index.html
