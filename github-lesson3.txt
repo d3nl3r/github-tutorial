@@ -20,3 +20,8 @@ $git rm index.html
 This is how you rename branches
 
 $git branch -m app01 app1
+
+-------------
+This is how you delete branch
+
+$git branch -D branchname
