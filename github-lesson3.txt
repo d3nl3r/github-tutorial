@@ -6,8 +6,17 @@ $git checkout index.html
 
 --------
 
+This is how you undo the changes you saved from html files /the files you just deleted
 $git status
 
 $git add index.html
 
 $git reset HEAD index.html
+
+This is how you delete the files from your to directory directly to staging area
+$git rm index.html
+
+-------------
+This is how you rename branches
+
+$git branch -m app01 app1
