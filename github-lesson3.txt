@@ -25,3 +25,10 @@ $git branch -m app01 app1
 This is how you delete branch
 
 $git branch -D branchname
+
+-------------
+This is how you clone repo to your desktop
+
+$cd desktop
+
+$git clone https://github.com/.../repo.git
